@@ -12,9 +12,50 @@
 	<!-- let's also include these jquery scripts. -->
 	<script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
 	<script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+
+	<style>
+		.box {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		  }
+	
+		.item {
+			min-height: 20vh;
+			min-width: 15vw;
+		}
+	
+		.row {
+			min-height: 10vh;
+			min-width: 100vw;
+		}
+	</style>
 </head>
 <body>
 	<!-- Your layout here -->
+	<div class="box">
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+		<div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+    </div>
+	<div class="row"></div>
+	<div class="box">
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+		<div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+    </div>
+	<div class="row"></div>
+	<div class="box">
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+		<div class="item bg-primary"></div>
+        <div class="item bg-primary"></div>
+    </div>
 
 </body>
 </html>

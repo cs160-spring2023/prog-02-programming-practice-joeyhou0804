@@ -46,9 +46,6 @@ app.get('/t1', function (req, res) {
 app.get('/t2', function (req, res) {
     res.sendFile(publicPath + '/t2.html');
 });
-app.get('/t3', function (req, res) {
-    res.sendFile(publicPath + '/t3.html');
-});
 app.get('/t4', function (req, res) {
     res.sendFile(publicPath + '/t4.html');
 });
@@ -59,6 +56,25 @@ app.get('/t7', function (req, res) {
     res.sendFile(publicPath + '/t7.html');
 });
 
+// -- Task 3 Navigation -- //
+app.get('/t3', function (req, res) {
+    res.sendFile(publicPath + '/t3.html');
+});
+app.get('/t3/1', function (req, res) {
+    res.sendFile(publicPath + '/t3/1.html');
+});
+app.get('/t3/2', function (req, res) {
+    res.sendFile(publicPath + '/t3/2.html');
+});
+app.get('/t3/3', function (req, res) {
+    res.sendFile(publicPath + '/t3/3.html');
+});
+app.get('/t3/4', function (req, res) {
+    res.sendFile(publicPath + '/t3/4.html');
+});
+app.get('/t3/5', function (req, res) {
+    res.sendFile(publicPath + '/t3/5.html');
+});
 
 // -- Task 5 Navigation -- //
 app.get('/t5', function (req, res) {

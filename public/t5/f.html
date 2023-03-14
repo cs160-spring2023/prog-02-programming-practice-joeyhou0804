@@ -12,9 +12,45 @@
 	<!-- let's also include these jquery scripts. -->
 	<script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
 	<script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+
+	<style>
+		.h-first {
+			min-height: 30vh;
+		}
+		.h-row {
+			min-height: 5vh;
+		}
+		.h-inside {
+			min-height: 20vh;
+		}
+		.h-second {
+			min-height: 60vh;
+		}
+		.h-small {
+			min-height: 10vh;
+		}
+	</style>
 </head>
 <body>
 	<!-- Your layout here -->
+	<div class="container">
+		<div class="row bg-danger h-first">
+			<div class="col">
+				<div class="row h-row"></div>
+				<div class="row h-inside">
+					<div class="col-1"></div>
+					<div class="col-5 bg-primary"></div>
+					<div class="col-5 bg-success"></div>
+					<div class="col-1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row h-small">
+			<div class="col-10 bg-primary"></div>
+			<div class="col-2 bg-success"></div>
+		</div>
+		<div class="row h-second bg-primary"></div>
+	</div>
 
 </body>
 </html>
